@@ -116,7 +116,7 @@
       if (!arr.includes(ele)) arr.push(ele)
     }
     
-    return shuffleArray(array)
+    return shuffleArray(arr)
     
   }
   
@@ -209,7 +209,8 @@
   // TODO 5
   // Asynchronously call the loadQuizData() function,
   // Then call renderQuiz() with the returned imageUrl, correctAnswer, and choices
-
+  const [img, breed, choices] = await loadQuizData()
+  renderQuiz(img, breed, choices)
 
 </script>
 
